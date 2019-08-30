@@ -1,5 +1,6 @@
 package assignment01;
-import assignment01.*;
+import assignment01.DateAndPlaceOfBirth;
+import assignment01.StreetUSAddress;
 /**
  * 
  * @author CS 140
