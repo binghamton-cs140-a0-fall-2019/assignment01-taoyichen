@@ -1,5 +1,5 @@
 package assignment01;
-
+import assignment01.*;
 /**
  * 
  * @author CS 140
@@ -81,7 +81,7 @@ public class Person {
 // Binghamton, NY 13905
 	public String toString (){
 		String outString = "";
-		outString += firstName + " " lastName + " (" + this.getSSN() + ")\n";
+		outString += firstName + " " + lastName + " (" + this.getSSN() + ")\n";
 		return outString;
 	}
 }
