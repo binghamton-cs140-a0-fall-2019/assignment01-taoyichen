@@ -106,6 +106,7 @@ public class DateAndPlaceOfBirth {
 	 * the same day and month as the date of birth of other and false otherwise
 	 */
 	public boolean hasSameBirthDayAs(DateAndPlaceOfBirth other) {
+		return dateOfBirth.isEqual(other.dateOfBirth);
   //TODO complete this method
   }
 	@Override
