@@ -80,6 +80,8 @@ public class Person {
 // Apt 1B
 // Binghamton, NY 13905
 	public String toString (){
-		return this.getFirstNames + this.getLastNames + 
+		String outString = "";
+		outString += firstName + " " lastName + " (" + this.getSSN() + ")\n";
+		return outString;
 	}
 }
