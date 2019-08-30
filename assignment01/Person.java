@@ -24,7 +24,7 @@ public class Person {
 		firstNames = fstNames;
 		lastNames = lstNames;
 		var str = ssnString.trim().replace("-","");
-		while(str.charAt(0) == '0') {
+		while(str.charAt(0) == '0') {//Remove 0s at front
 			str = str.substring(1);
 		}
 		try {
@@ -62,7 +62,16 @@ public class Person {
 		return String.format("%03d-%02d-%04d", ssn/1000000,ssn%1000000/10000, ssn%10000); 
 
 	}
-// TODO provide the getter methods for placeDob and address 
+// TODO provide the getter methods for placeDob and address
+
+	public String getPlaceDob (){
+		return placeDob.toString();
+	}
+
+	public String getAddress (){
+		return address.toString();
+	}
+
 // TODO Override the public String toString() method that is similar to the 
 // toString of the StreetUSAddress class and will print a person as:
 // Jane Doe (111-22-3333), 
@@ -70,4 +79,7 @@ public class Person {
 // 123 Main Street
 // Apt 1B
 // Binghamton, NY 13905
+	public String toString (){
+		return this.getFirstNames + this.getLastNames + 
+	}
 }
