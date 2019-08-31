@@ -2,18 +2,18 @@ package assignment01;
 import assignment01.DateAndPlaceOfBirth;
 import assignment01.StreetUSAddress;
 /**
- * 
+ *
  * @author CS 140
  *
  */
 public class Person {
-	private String firstNames; 
+	private String firstNames;
 	private String lastNames;
 	private int ssn;
 	private DateAndPlaceOfBirth placeDob;
 	private StreetUSAddress address;
 	/**
-	 * 
+	 *
 	 * @param firstNames
 	 * @param lastNames
 	 * @param ssn
@@ -38,29 +38,29 @@ public class Person {
 		address = addr;
 	}
 	/**
-	 * 
+	 *
 	 * @return
 	 */
 	public String getFirstNames() {
 		return firstNames;
 	}
 	/**
-	 * 
+	 *
 	 * @return
 	 */
 	public String getLastNames() {
 		return lastNames;
 	}
 	/**
-	 * 
+	 *
 	 * @return
 	 */
 	public String getSSN() {
 // either
 //		String str = String.format("%09d", ssn);
-//		return str.substring(0,3) + "-" + str.substring(3,5) + "-" + str.substring(5); 
+//		return str.substring(0,3) + "-" + str.substring(3,5) + "-" + str.substring(5);
 // or
-		return String.format("%03d-%02d-%04d", ssn/1000000,ssn%1000000/10000, ssn%10000); 
+		return String.format("%03d-%02d-%04d", ssn/1000000,ssn%1000000/10000, ssn%10000);
 
 	}
 // TODO provide the getter methods for placeDob and address
@@ -73,16 +73,16 @@ public class Person {
 		return address.toString();
 	}
 
-// TODO Override the public String toString() method that is similar to the 
+// TODO Override the public String toString() method that is similar to the
 // toString of the StreetUSAddress class and will print a person as:
-// Jane Doe (111-22-3333), 
+// Jane Doe (111-22-3333),
 // Date and place of birth: 1999-04-23, Springfield, CA, USA
 // 123 Main Street
 // Apt 1B
 // Binghamton, NY 13905
 	public String toString (){
 		String outString = "";
-		outString += firstName + " " + lastName + " (" + this.getSSN() + ")\n";
+		outString += firstNames + " " + lastNames + " (" + this.getSSN() + ")\n";
 		return outString;
 	}
 }
