@@ -38,7 +38,7 @@ public class PlaceDOBTester {
 
 		try(var output =new PrintWriter(new FileOutputStream(
 			    new File("output.txt"), true /* true means append to file */))) {
-			output.println("\nTESTS FOR Computer.java:");
+			output.println("\nTESTS FOR DateAndPlaceOfBirth.java:");
 
 		//Copy all your lines above, add an extra "2" to every variable name
 		// and replace every System.out.print or System.out.println
@@ -46,5 +46,7 @@ public class PlaceDOBTester {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+
+
 	}
 }
