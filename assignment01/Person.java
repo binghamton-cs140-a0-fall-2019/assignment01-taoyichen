@@ -1,10 +1,6 @@
 package assignment01;
 import assignment01.DateAndPlaceOfBirth;
 import assignment01.StreetUSAddress;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintWriter;
 /**
  *
  * @author CS 140
@@ -87,6 +83,8 @@ public class Person {
 	public String toString (){
 		String outString = "";
 		outString += firstNames + " " + lastNames + " (" + this.getSSN() + ")\n";
+		outString += this.getPlaceDob() + "\n";
+		outString += this.getAddress() + "\n";
 		return outString;
 	}
 }
